@@ -2,7 +2,8 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         char_list = []
         for character in s:
-            if character.isalpha() or character.isdigit():
+            # if character.isalpha() or character.isdigit():
+            if character.isalnum(): # 동시에 검사
                 char_list.append(character.lower())
         # print(char_list)
 
