@@ -17,7 +17,7 @@ class Solution:
             while left >= 0 and right < len(s) and s[left] == s[right]:
                 left -= 1
                 right += 1
-            return s[left + 1 : right]
+            return s[left + 1 : right]  # 위에서 left -1 을 해서 원상복귀, right는 slicing 대응
 
         # 해당사항 없음 필터링
         if len(s) < 2 or s == s[::-1]:
@@ -27,8 +27,8 @@ class Solution:
         result = ''
         for i in range(len(s) - 1):
             result = max(result,
-                         expand(i, i),
-                         expand(i, i + 1),
+                         expand(i, i),  # 홀수 대응
+                         expand(i, i + 1),  # 짝수 대응
                          key=len)
         return result
 
