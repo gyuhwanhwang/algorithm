@@ -17,26 +17,26 @@ class Solution:
 
         # second 재귀를 이용한 분리
 
-#         # 집합으로 정렬
-#         for char in sorted(set(s)):
-#             suffix = s[s.index(char):]
-#             # 전체 집합과 접미사 집합이 일치할 때 분리 진행
-#             if set(s) == set(suffix):
-#                 return char + self.removeDuplicateLetters(suffix.replace(char, ''))
-#         return ''
+        # 집합으로 정렬
+        for char in sorted(set(s)):
+            suffix = s[s.index(char):]
+            # 전체 집합과 접미사 집합이 일치할 때 분리 진행
+            if set(s) == set(suffix):
+                return char + self.removeDuplicateLetters(suffix.replace(char, ''))
+        return ''
 
-# first
-#         stack = []
+        # first
+        stack = []
 
-#         for i, char in enumerate(s):
-#             if not stack:
-#                 stack.append(char)
-#                 continue
+        for i, char in enumerate(s):
+            if not stack:
+                stack.append(char)
+                continue
 
-#             while stack and char not in stack and stack[-1] > char and stack[-1] in s[i+1:]:
-#                 stack.pop()
-#             if char not in stack:
-#                 stack.append(char)
+            while stack and char not in stack and stack[-1] > char and stack[-1] in s[i+1:]:
+                stack.pop()
+            if char not in stack:
+                stack.append(char)
 
-#         return ''.join(stack)
+        return ''.join(stack)
 
