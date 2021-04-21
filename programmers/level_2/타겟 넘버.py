@@ -12,3 +12,7 @@ def solution(numbers, target):
 
     dfs(0, 0)
     return sum(answer)
+
+def solution(numbers, target):
+		num_list = [(x, -x) for x in numbers]
+		return list(map(sum, product(*num_list))).count(target)
