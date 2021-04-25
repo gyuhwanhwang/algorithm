@@ -2,7 +2,6 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         table = defaultdict(str)
-        visited = set()
         for i in range(len(s)):
             # 처음 변환하는 단어
             if not table[s[i]]:
