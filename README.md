@@ -2,3 +2,4 @@
 
 ### [<center>📑Problem solving notion page📑</center>](https://www.notion.so/gyuhwanhwang/f001ad60c81944b2a7c8b63e7f4be450?v=0738a0a2b32b492b8fa58faca3f6a5ed)<br>
 ### [<center>📚Python library notes notion page📚</center>](https://www.notion.so/gyuhwanhwang/a36b769d21104938a1fea258c7b35fdc)
+### [<center>💡Python skill notes notion page💡</center>](https://www.notion.so/gyuhwanhwang/skill-08d96d0cc175413398745e728c3f587f)
